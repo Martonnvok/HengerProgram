@@ -34,6 +34,7 @@ public class HengerProgram {
 
     private static List lista() {
         
+        int bla =0;
         return lista();
         
     }
