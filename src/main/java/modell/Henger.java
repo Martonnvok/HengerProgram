@@ -1,6 +1,6 @@
 package modell;
 
-public class Henger {
+public abstract class Henger {
 
     private static int hengerDarab;
     private double sugar, magassag;

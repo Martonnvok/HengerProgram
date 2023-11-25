@@ -9,20 +9,21 @@ public class Cso extends TomorHenger {
         this.falvastagsag = falvastagsag;
     }
 
-    public Cso(double sugar, double magassag, double falvastagsag) {
-        super(sugar, magassag, falvastagsag);
+    public Cso(double sugar, double magassag, double fajsuly) {
+        super(sugar, magassag, fajsuly);
     }
 
     public double getFalvastagsag() {
         return falvastagsag;
     }
 
+    @Override
     public double terfogat() {
-        return falvastagsag;
+        return Math.PI * Math.pow(getSugar(), 2) * getMagassag();
     }
 
     @Override
     public String toString() {
-        return "fajsuly: " + this.falvastagsag;
+        return super.toString() + ", Falvastagság: " + this.falvastagsag + " (Cső)";
     }
 }

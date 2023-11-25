@@ -22,7 +22,12 @@ public class TomorHenger extends Henger {
     }
 
     @Override
+    public double terfogat() {
+        return Math.PI * Math.pow(getSugar(), 2) * getMagassag();
+    }
+
+    @Override
     public String toString() {
-        return "fajsuly: " + this.fajsuly;
+        return super.toString() + ", fajsuly: " + this.fajsuly + ", suly: " + suly();
     }
 }
