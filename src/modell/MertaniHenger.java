@@ -1,11 +1,11 @@
 package modell;
 
-public abstract class Henger {
+public abstract class MertaniHenger {
 
     private static int hengerDarab;
     private double sugar, magassag;
 
-    public Henger(double sugar, double magassag) {
+    public MertaniHenger(double sugar, double magassag) {
         this.sugar = sugar;
         this.magassag = magassag;
         hengerDarab++;
@@ -27,6 +27,6 @@ public abstract class Henger {
 
     @Override
     public String toString() {
-        return "Sugár: " + this.sugar + ", Magasság: " + this.magassag;
+        return "Sugár: " + this.sugar + ", Magasság: " + this.magassag+ " Típusa: Mértani henger";
     }
 }

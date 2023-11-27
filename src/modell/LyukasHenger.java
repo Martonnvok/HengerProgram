@@ -1,15 +1,15 @@
 package modell;
 
-public class Cso extends TomorHenger {
+public class LyukasHenger extends TomorHenger {
 
     private double falvastagsag;
 
-    public Cso(double sugar, double magassag, double fajsuly, double falvastagsag) {
+    public LyukasHenger(double sugar, double magassag, double fajsuly, double falvastagsag) {
         super(sugar, magassag, fajsuly);
         this.falvastagsag = falvastagsag;
     }
 
-    public Cso(double sugar, double magassag, double fajsuly) {
+    public LyukasHenger(double sugar, double magassag, double fajsuly) {
         super(sugar, magassag, fajsuly);
     }
 
@@ -24,6 +24,6 @@ public class Cso extends TomorHenger {
 
     @Override
     public String toString() {
-        return super.toString() + ", Falvastagság: " + this.falvastagsag + " (Cső)";
+        return super.toString() + ", Falvastagság: " + this.falvastagsag + " Típusa: Lyukas henger ";
     }
 }

@@ -1,6 +1,6 @@
 package modell;
 
-public class TomorHenger extends Henger {
+public class TomorHenger extends MertaniHenger {
     private double fajsuly;
 
     public TomorHenger(double sugar, double magassag, double fajsuly) {
@@ -27,6 +27,6 @@ public class TomorHenger extends Henger {
 
     @Override
     public String toString() {
-        return super.toString() + ", Fajsúly: " + this.fajsuly + ", Súly: " + suly() + " (Tömör henger)";
+        return super.toString() + ", Fajsúly: " + this.fajsuly + ", Súly: " + suly() + " Típusa: Tömör henger";
     }
 }

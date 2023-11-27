@@ -1,2 +1,0 @@
-# HengerProgram
-# Somogyvári Márton
