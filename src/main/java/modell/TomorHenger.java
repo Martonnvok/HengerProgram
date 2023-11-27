@@ -1,7 +1,6 @@
 package modell;
 
 public class TomorHenger extends Henger {
-
     private double fajsuly;
 
     public TomorHenger(double sugar, double magassag, double fajsuly) {
@@ -17,17 +16,17 @@ public class TomorHenger extends Henger {
         return fajsuly;
     }
 
+    @Override
+    public double terfogat() {
+        return Math.PI * Math.pow(getSugar(), 3) * getMagassag();
+    }
+
     public double suly() {
         return fajsuly * 2;
     }
 
     @Override
-    public double terfogat() {
-        return Math.PI * Math.pow(getSugar(), 2) * getMagassag();
-    }
-
-    @Override
     public String toString() {
-        return super.toString() + ", fajsuly: " + this.fajsuly + ", suly: " + suly();
+        return super.toString() + ", Fajsúly: " + this.fajsuly + ", Súly: " + suly() + " (Tömör henger)";
     }
 }

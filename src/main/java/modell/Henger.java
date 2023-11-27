@@ -5,29 +5,28 @@ public abstract class Henger {
     private static int hengerDarab;
     private double sugar, magassag;
 
-    public Henger(double r, double m) {
-        this.sugar = r;
-        this.magassag = m;
+    public Henger(double sugar, double magassag) {
+        this.sugar = sugar;
+        this.magassag = magassag;
+        hengerDarab++;
     }
-    
-    public int getHengerDarab(){
+
+    public static int getHengerDarab() {
         return hengerDarab;
     }
-    
-    public double getSugar(){
+
+    public double getSugar() {
         return sugar;
     }
-    
-    public double getMagassag(){
+
+    public double getMagassag() {
         return magassag;
     }
-    
-    public double terfogat(){
-        return magassag * sugar;
-    }
-    
+
+    public abstract double terfogat();
+
     @Override
-    public String toString(){
-        return "Sugár: "+this.sugar+", Magasság: "+this.magassag+", HengerDarab: "+hengerDarab;
+    public String toString() {
+        return "Sugár: " + this.sugar + ", Magasság: " + this.magassag;
     }
 }
