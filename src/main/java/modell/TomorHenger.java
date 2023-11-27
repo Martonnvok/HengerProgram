@@ -18,7 +18,7 @@ public class TomorHenger extends Henger {
 
     @Override
     public double terfogat() {
-        return Math.PI * Math.pow(getSugar(), 3) * getMagassag();
+        return Math.PI * Math.pow(getSugar(), 2) * getMagassag();
     }
 
     public double suly() {
